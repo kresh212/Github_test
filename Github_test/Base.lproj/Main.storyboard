@@ -38,20 +38,34 @@
                                     <action selector="cleanButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nHf-S7-4Jj"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2se-Cr-ub8">
+                                <rect key="frame" x="30" y="318" width="315" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Zg6-BM-14j"/>
+                                </constraints>
+                                <state key="normal" title="Change button color"/>
+                                <connections>
+                                    <action selector="changeButtonColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="edJ-MC-ZZj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="T1F-B7-vYt" secondAttribute="bottom" constant="100" id="2pz-Ar-nxf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2se-Cr-ub8" secondAttribute="trailing" constant="30" id="5HF-wr-Qc2"/>
                             <constraint firstItem="T1F-B7-vYt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="BQr-5r-svN"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="T1F-B7-vYt" secondAttribute="trailing" constant="30" id="FQ2-qQ-mUk"/>
+                            <constraint firstItem="2se-Cr-ub8" firstAttribute="top" secondItem="D15-aO-rlg" secondAttribute="bottom" constant="148" id="Jzd-i3-ovD"/>
                             <constraint firstItem="D15-aO-rlg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="WqE-xf-B75"/>
                             <constraint firstItem="D15-aO-rlg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="ce5-Oz-Wi9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="D15-aO-rlg" secondAttribute="trailing" constant="30" id="ct2-QR-6Co"/>
+                            <constraint firstItem="2se-Cr-ub8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="xVh-Ne-nqL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="button" destination="D15-aO-rlg" id="MXu-05-MtN"/>
+                        <outlet property="changeButtonColor" destination="2se-Cr-ub8" id="AQ6-zZ-Idf"/>
                         <outlet property="cleanButton" destination="T1F-B7-vYt" id="POr-7q-7AQ"/>
                     </connections>
                 </viewController>
