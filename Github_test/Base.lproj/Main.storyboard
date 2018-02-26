@@ -28,9 +28,22 @@
                                     <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D4r-Ft-7gX"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T1F-B7-vYt">
+                                <rect key="frame" x="30" y="517" width="315" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="XFy-iq-3dA"/>
+                                </constraints>
+                                <state key="normal" title="Clean background"/>
+                                <connections>
+                                    <action selector="cleanButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nHf-S7-4Jj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="T1F-B7-vYt" secondAttribute="bottom" constant="100" id="2pz-Ar-nxf"/>
+                            <constraint firstItem="T1F-B7-vYt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="BQr-5r-svN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="T1F-B7-vYt" secondAttribute="trailing" constant="30" id="FQ2-qQ-mUk"/>
                             <constraint firstItem="D15-aO-rlg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="WqE-xf-B75"/>
                             <constraint firstItem="D15-aO-rlg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="ce5-Oz-Wi9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="D15-aO-rlg" secondAttribute="trailing" constant="30" id="ct2-QR-6Co"/>
@@ -39,6 +52,7 @@
                     </view>
                     <connections>
                         <outlet property="button" destination="D15-aO-rlg" id="MXu-05-MtN"/>
+                        <outlet property="cleanButton" destination="T1F-B7-vYt" id="POr-7q-7AQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

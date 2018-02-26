@@ -11,6 +11,7 @@ import UIKit
 class ADViewController: UIViewController {
 
     @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var cleanButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,8 +20,20 @@ class ADViewController: UIViewController {
         button.layer.borderColor = UIColor.blue.cgColor
         button.layer.borderWidth = 1;
         button.backgroundColor = UIColor.white
+        
+        cleanButton.layer.cornerRadius = 5
+        cleanButton.layer.borderColor = UIColor.blue.cgColor
+        cleanButton.layer.borderWidth = 1;
+        cleanButton.backgroundColor = UIColor.white
     }
 
+    
+    // MARK: Clean Button
+    @IBAction func cleanButtonPressed(_ sender: UIButton) {
+        self.view.backgroundColor = UIColor.white
+    }
+    
+    // MARK: Button
     @IBAction func buttonPressed(_ sender: UIButton) {
         
         self.view.backgroundColor = randomColor()
