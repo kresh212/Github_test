@@ -26,6 +26,11 @@ class ADViewController: UIViewController {
         cleanButton.layer.borderColor = UIColor.blue.cgColor
         cleanButton.layer.borderWidth = 1;
         cleanButton.backgroundColor = UIColor.white
+        
+        changeButtonColor.layer.cornerRadius = 5
+        changeButtonColor.layer.borderColor = UIColor.blue.cgColor
+        changeButtonColor.layer.borderWidth = 1;
+        changeButtonColor.backgroundColor = UIColor.white
     }
 
     // MARK: Change button color
